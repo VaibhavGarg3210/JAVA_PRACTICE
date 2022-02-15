@@ -16,9 +16,10 @@ public class PatternTen30 {
 	 */
 
 	public static void main(String[] args) {
+		int n = 5;//Only odd values
 		for(int i=1;i<10;i++)
 		{
-			if(i<= 5) {
+			/*if(i<= 5) {
 			for(int j=1;j<i;j++)
 				System.out.print(" ");
 			System.out.print("*");
@@ -33,7 +34,15 @@ public class PatternTen30 {
 			System.out.print("*");
 			for(int j=1;j<=(i-5)*2-1;j++)
 				System.out.print(" ");
-			System.out.println("*");	}
+			System.out.println("*");}*/
+		//Updated Code 
+		for(int j=1;j<=n;j++)
+		{ if(j == i || j == n-i+1)
+			System.out.print("*");
+		 else
+			 System.out.print(" ");
+		}
+			System.out.println();
 
 	}
 	}
